@@ -1,0 +1,81 @@
+.contact-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 97vh;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  .message-field {
+    margin-top: 0.75vh;
+    width: 40vw;
+    height: 25vh;
+    min-height: 140px;
+    resize: none;
+  }
+
+  .topInputs {
+    display: flex;
+  }
+
+  .input-field {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 0.75vh;
+    width: 15vw;
+    height: 2vh;
+    min-height: 24px;
+  }
+
+  .inputLabel {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .submitButton {
+    width: 10vw;
+    min-width: 155px;
+    max-width: 245px;
+    height: 2vw;
+    min-height: 32px;
+    max-height: 45px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1040px) {
+  .contact-page-container {
+    .message-field {
+      width: 60vw;
+    }
+
+    .input-field {
+      width: 25vw;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .contact-page-container {
+    .topInputs {
+      flex-direction: column;
+    }
+    .input-field {
+      width: 40vw;
+    }
+    .submitButton {
+      font-size: 1em;
+      min-width: 130px;
+    }
+  }
+}

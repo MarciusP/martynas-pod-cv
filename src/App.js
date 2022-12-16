@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import Navbar from "./components/navigation/Navbar";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import MobileMenu from "./components/navigation/mobileMenu/MobileMenu";
+import "./components/navigation/mobileMenu/mobileMenu.scss"
+
+const MainPage = lazy(() => import("./components/pages/mainPage/MainPage"));
+const ContactPage = lazy(() => import("./components/pages/contactPage/ContactPage"));
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div>
+          <Navbar />
+          <MobileMenu />
+          <Suspense fallback={<h2>Loading ...</h2>}>
+            <Routes>
+              <Route exact path="/" element={<MainPage />}/>
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </Suspense>
+        </div>
+      </Router>
     </div>
   );
 }

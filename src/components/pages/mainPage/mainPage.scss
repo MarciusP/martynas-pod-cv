@@ -1,0 +1,154 @@
+.MainPageStyling {
+  margin-top: 5vh;
+}
+
+.cardHolder {
+  border: 2px solid black;
+  border-radius: 15px;
+  max-width: 60vw;
+  margin: 3vh auto;
+
+  hr {
+    border-top: 1px solid black;
+    width: calc(100% + 4vw - 2px);
+    margin-left: -2vw;
+  }
+
+  .cardTitle {
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+  }
+
+  .imageAndDetails {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.contactLine {
+  display: flex;
+  flex-direction: row;
+  margin: 1vh auto;
+
+  img {
+    width: 22px;
+    height: 22px;
+    margin-right: 0.5vw;
+  }
+
+  div {
+    vertical-align: middle;
+    font-weight: 500;
+  }
+}
+
+.educationData {
+  text-align: left;
+  margin: 2vh auto;
+
+  .educationTitle {
+    font-size: 1.4em;
+    margin-bottom: 0.4vh;
+  }
+
+  .educationInstitution {
+    font-size: 1.2em;
+  }
+
+  .educationYears {
+    font-size: 1em;
+  }
+}
+
+.skillWidgetHolder {
+  margin-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .skillWidget {
+    width: 7vw;
+    min-width: 140px;
+    height: 3vh;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 16px;
+    filter: drop-shadow(-3px 3px 5px #4d4d4d);
+    margin: 1.5vh 1.5vw;
+    cursor: pointer;
+  }
+
+  .skillTechName {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .skillWidgetPercentageBg {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skillWidgetBgElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    height: 100%;
+  }
+}
+
+.skillWidgetPopUp{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  background-color: white;
+  outline: none;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+@media (max-width: 1040px) {
+  .cardHolder {
+    max-width: 75vw;
+  }
+}
+
+@media (max-width: 840px) {
+  .cardHolder {
+    max-width: 75vw;
+
+    .imageAndDetails {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .imageHolder {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: auto;
+        max-width: 250px;
+      }
+    }
+
+    .cardTitle {
+      margin-bottom: 1vh;
+    }
+  }
+
+  .educationData {
+    margin: 0 5vw;
+
+    &:first-child div.educationTitle {
+      margin-top: 1.5vh;
+    }
+  }
+}
