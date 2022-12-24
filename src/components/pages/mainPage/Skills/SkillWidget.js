@@ -1,25 +1,10 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import "./mainPage.scss";
-
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "0px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
+import "../mainPage.scss";
 
 function SkillsWidget(props) {
   let { technology, percentage, description } = props;
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -72,8 +57,20 @@ function SkillsWidget(props) {
       </div>
       <Modal open={open} onClose={handleClose}>
         <div className="skillWidgetPopUp">
-          <div style={{fontSize: "1.4em", fontWeight:"600", marginBottom: "1.5vh"}}>Details:</div>
-          <div style={{marginBottom: "1.5vh", fontSize: "1.2em"}}>{description.split('\n').map(str => <p>{str}</p>)}</div>
+          <div
+            style={{
+              fontSize: "1.4em",
+              fontWeight: "600",
+              marginBottom: "1.5vh",
+            }}
+          >
+            Details:
+          </div>
+          <div style={{ marginBottom: "1.5vh", fontSize: "1.2em" }}>
+            {description.split("\n").map((str) => (
+              <p key={str}>{str}</p>
+            ))}
+          </div>
         </div>
       </Modal>
     </div>

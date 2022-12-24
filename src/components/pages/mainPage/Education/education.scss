@@ -1,0 +1,27 @@
+.educationData {
+  text-align: left;
+  margin: 2vh auto;
+
+  .educationTitle {
+    font-size: 1.4em;
+    margin-bottom: 0.4vh;
+  }
+
+  .educationInstitution {
+    font-size: 1.2em;
+  }
+
+  .educationYears {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 840px) {
+  .educationData {
+    margin: 0 5vw;
+
+    &:first-child div.educationTitle {
+      margin-top: 1.5vh;
+    }
+  }
+}

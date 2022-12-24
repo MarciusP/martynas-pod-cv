@@ -7,12 +7,12 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleIsOpen = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   const closeSideBar = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   return (
     <div className="mobileMenuWrapper">

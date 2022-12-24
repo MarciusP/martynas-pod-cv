@@ -1,0 +1,73 @@
+.experienceWidgets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.expWidget {
+  display: flex;
+  width: 25vw;
+  max-width: 300px;
+  min-width: 245px;
+  flex-direction: column;
+  text-align: left;
+  margin: 2vh 2vw;
+  border: 1px solid black;
+  padding: 1vh 1vw;
+  border-radius: 15px;
+
+  hr {
+    border-top: 1px solid black;
+    width: calc(100% + 2vw - 2px);
+    margin-left: -1vw;
+  }
+
+  .expWidgetTop {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    font-weight: 500;
+
+    .expCompany {
+      margin-right: 0.8vw;
+    }
+  }
+
+  .expPosition {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 0.5vh;
+    text-align: center;
+  }
+
+  .expFooter {
+    display: flex;
+    justify-content: flex-end;
+
+    .expLocation {
+      margin-top: 0.85vh;
+      margin-right: -1vw;
+      margin-bottom: -1vh;
+      padding-left: 0.5vw;
+      padding-top: 0.2vh;
+      padding-bottom: 0.7vh;
+      padding-right: 0.7vw;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      border-top-left-radius: 10px;
+    }
+  }
+
+  .expChipHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.expSkillChip {
+  border: 1px solid black;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin: 0.5vh 1vw;
+}

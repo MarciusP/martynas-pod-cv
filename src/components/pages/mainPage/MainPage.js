@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import GenInfo from "./GenInfo";
-import Education from "./Education";
-import Skills from "./Skills";
+import React from "react";
+import GenInfo from "./GeneralInfo/GenInfo";
+import Education from "./Education/Education";
+import Skills from "./Skills/Skills";
+import Experience from "./Experience/Experience";
 
 function MainPage() {
   return (
@@ -9,6 +10,7 @@ function MainPage() {
       <GenInfo />
       <Education />
       <Skills />
+      <Experience />
     </div>
   );
 }

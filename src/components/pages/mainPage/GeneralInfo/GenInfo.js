@@ -1,13 +1,14 @@
 import React from "react";
-import "./mainPage.scss";
+import "../mainPage.scss";
+import "./generalInfo.scss";
 import ContactLine from "./ContactLine";
-import Card from "./Card";
+import Card from "../Card";
 
-import roundImage from "../../../res/images/round-small.png";
-import email from "../../../res/icons/email.png";
-import linkedin from "../../../res/icons/linkedin.png";
-import location from "../../../res/icons/location.png";
-import phone from "../../../res/icons/phone.png";
+import roundImage from "../../../../res/images/round-small.png";
+import email from "../../../../res/icons/email.png";
+import linkedin from "../../../../res/icons/linkedin.png";
+import location from "../../../../res/icons/location.png";
+import phone from "../../../../res/icons/phone.png";
 
 function GenInfo() {
   return (
@@ -43,7 +44,7 @@ function GenInfo() {
           </div>
         </div>
         <div className="imageHolder">
-            <img src={roundImage} />
+          <img src={roundImage} alt="Martynas Podenas image" />
         </div>
       </div>
     </Card>

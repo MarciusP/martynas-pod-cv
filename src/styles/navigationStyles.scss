@@ -1,23 +1,23 @@
-.navbarStyling{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3vh;
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
+.navbarStyling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
 
-    .navbarEntry{
-        margin-left: 3vw;
-        margin-right: 3vw;
-        font-size: 1.3em;
-    }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbarEntry {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 1.3em;
+  }
 }
 
-@media (max-width: 649px){
-    .navbarStyling{
-        display: none;
-    }
+@media (max-width: 649px) {
+  .navbarStyling {
+    display: none;
+  }
 }

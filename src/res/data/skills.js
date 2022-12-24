@@ -3,7 +3,7 @@ const skillData = [
     skillName: "React",
     percentage: 90,
     description:
-      `I am using React in my current employment position for developing front end solutions. 
+      `I am using React in my current employment position for developing front-end solutions. 
       I have at least 2 years industrial experience using React and even more experience in general, as I have used React for my personal projects as well.`,
   },
   {
@@ -42,7 +42,7 @@ const skillData = [
     skillName: "Python",
     percentage: 40,
     description:
-      `My current employment position has moved beyond front end development - I had to adapt and develop my Python skills as quickly as possible to become full stack developer. Since I had a little bit of experience with Python from my University courses, this adaptation was not painful and I had gained some python development experience as well.`,
+      `My current employment position has moved beyond front-end development - I had to adapt and develop my Python skills as quickly as possible to become full stack developer. Since I had a little bit of experience with Python from my University courses, this adaptation was not painful and I had gained some python development experience as well.`,
   },
   {
     skillName: "Docker",

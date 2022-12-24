@@ -1,5 +1,6 @@
 import React from "react";
-import "./mainPage.scss";
+import "../mainPage.scss";
+import "./education.scss";
 
 function EducationData(props) {
   const { title, institution, years } = props;

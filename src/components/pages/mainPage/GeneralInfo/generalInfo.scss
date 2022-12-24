@@ -1,0 +1,16 @@
+.contactLine {
+  display: flex;
+  flex-direction: row;
+  margin: 1vh auto;
+
+  img {
+    width: 22px;
+    height: 22px;
+    margin-right: 0.5vw;
+  }
+
+  div {
+    vertical-align: middle;
+    font-weight: 500;
+  }
+}

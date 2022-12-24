@@ -1,5 +1,5 @@
-import React from 'react';
-import './ContactPage.scss';
+import React from "react";
+import "./ContactPage.scss";
 
 const ContactPage = () => {
   const handleSubmit = (event) => {
@@ -11,11 +11,11 @@ const ContactPage = () => {
     const message = event.target.elements.message.value;
 
     // Use the fetch API to call the endpoint with a POST method and pass the data
-    fetch('/test/endpoint', {
-      method: 'POST',
+    fetch("/test/endpoint", {
+      method: "POST",
       body: JSON.stringify({ name, email, message }),
     });
-  }
+  };
 
   return (
     <div className="contact-page-container">
@@ -34,15 +34,14 @@ const ContactPage = () => {
         </div>
         <br />
         <label className="inputLabel">Message:</label>
-        <textarea
-          name="message"
-          className="message-field"
-        />
+        <textarea name="message" className="message-field" />
         <br />
-        <button type="submit" className="submitButton">Send Message</button>
+        <button type="submit" className="submitButton">
+          Send Message
+        </button>
       </form>
     </div>
   );
-}
+};
 
 export default ContactPage;
